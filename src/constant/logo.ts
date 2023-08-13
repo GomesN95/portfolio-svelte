@@ -1,7 +1,7 @@
-import { svelte, react, angular } from '$lib/images/tech-logo';
+import { SVELTE, REACT, ANGULAR } from '$lib/images/tech-logo';
 
 export const LOGO: Record<string, any> = {
-  svelte: svelte,
-  react: react,
-  angular: angular,
+  svelte: SVELTE,
+  react: REACT,
+  angular: ANGULAR,
 };

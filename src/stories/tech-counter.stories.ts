@@ -1,10 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/svelte';
 
+import { REACT, ANGULAR } from '$lib/images/tech-logo';
 import TechCounter from '../components/tech-counter/tech-counter.svelte';
 import '../routes/styles.css';
 
 const meta = {
-  title: 'Example/TechCounter',
+  title: 'Components/TechCounter',
   component: TechCounter,
   tags: ['autodocs'],
   argTypes: {
@@ -29,9 +30,17 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/svelte/writing-stories/args
+export const Empty: Story = {
+  args: {
+    count: 0,
+    logo: null,
+  },
+};
+
 export const React: Story = {
   args: {
     count: 4,
+    logo: REACT,
   },
 };
 

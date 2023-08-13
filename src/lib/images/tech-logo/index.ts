@@ -1,9 +1,9 @@
-import svelte from './svelte.png';
-import react from './react.png';
-import angular from './angular.png';
+import SVELTE from './svelte.png';
+import REACT from './react.png';
+import ANGULAR from './angular.png';
 
 export {
-  svelte,
-  react,
-  angular
+  SVELTE,
+  REACT,
+  ANGULAR
 }

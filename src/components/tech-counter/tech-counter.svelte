@@ -1,7 +1,8 @@
 <script lang="ts">
-	import NG_LOGO from "$lib/images/logo/ng.png"
   import { cubicOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
+
+	import NG_LOGO from "$lib/images/logo/ng.png"
 
 	export let count: number = 0;
 	export let logo: any = null;
