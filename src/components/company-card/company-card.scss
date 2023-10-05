@@ -1,0 +1,35 @@
+.company-card {
+  border: 1px solid rgb(122, 120, 97);
+  border-radius: 10px;
+  height: 124px;
+  width: 482px;
+  background-color: rgb(255, 255, 229);
+  padding: 10px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .name{
+      font-weight: bold;
+    }
+
+    .description {
+      flex: 1;
+    }
+
+    .tags {
+      display: flex;
+      justify-content: end;
+      gap: 3px;
+      
+      .tag {
+        border: 1px solid rgb(122, 120, 97);
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 9px;
+      }
+    }
+  }
+}
