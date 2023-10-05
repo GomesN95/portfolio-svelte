@@ -1,6 +1,7 @@
 <script lang="ts">
   import { cubicOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
+	import './tech-counter.scss';
 
 	import NG_LOGO from "$lib/images/logo/ng.png"
 
@@ -37,10 +38,6 @@
     progress.set(count)
   }
 </script>
-
-<style lang="scss">
-  @import './tech-counter.scss';
-</style>
 
 <div class="tech-counter">
 	<div class="content">
