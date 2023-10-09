@@ -79,16 +79,6 @@ pre {
 	margin: 0 auto;
 }
 
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;
@@ -105,4 +95,55 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+input, textarea {
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+
+	&:hover {
+		box-shadow: 0px 0px 5px rgba(171, 51, 40, 0.6);
+		cursor: pointer;
+	}
+
+	&:focus {
+		
+	}
+}
+
+button {
+	padding: 3px 10px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background-color: var(--color-theme-1);
+	color: white;
+
+	&:hover {
+		box-shadow: 0px 0px 8px rgba(171, 51, 40, 0.6);
+		border: 1px solid var(--color-theme-1);
+		background-color: transparent;
+		color: var(--color-theme-1);
+		cursor: pointer;
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow: 0px 0px 8px rgba(171, 51, 40, 0.6);
+	}
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+	box-shadow: 0px 0px 8px rgba(171, 51, 40, 0.6);
 }

@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>GOMES NICOLAS</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Gomes Nicolas" />
 </svelte:head>
 
 <section>
