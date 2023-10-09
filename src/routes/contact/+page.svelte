@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Contact</title>
+	<title>G.N. - Contact</title>
 	<meta name="description" content="Contact Nicolas Gomes" />
 </svelte:head>
 

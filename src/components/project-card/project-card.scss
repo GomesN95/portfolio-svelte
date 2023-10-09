@@ -1,0 +1,38 @@
+.project-card {
+  border: 1px solid rgb(122, 120, 97);
+  border-radius: 10px;
+  height: 148px;
+  width: 296px;
+  background-color: rgb(255, 255, 229);
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+
+  .content {
+    width: 100%;
+
+    .name {
+      position: relative;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      filter: grayscale(80%);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .content {
+  
+      img {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}

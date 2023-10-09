@@ -1,0 +1,16 @@
+#projects {
+
+  .cards{
+    display: flex;
+    justify-content: start;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-basis: 296px;
+  }
+
+  @media (max-width: 1024px) {
+    .cards{
+      
+    }
+  }
+}
