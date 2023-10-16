@@ -1,8 +1,10 @@
 <script>
+	// @ts-nocheck
 	import { fade } from 'svelte/transition';
 	import Header from './Header.svelte';
+	import Three from './three-background.svelte';
 	import './styles.scss';
-
+	
 	export let data;
 
 </script>
@@ -10,6 +12,7 @@
 <div class="app">
 	<Header />
 
+	<Three />
 	{#key data.pathname}
 	<main in:fade={{ duration: 300, delay: 400 }} out:fade={{ duration: 300 }}>
 		<slot/>
