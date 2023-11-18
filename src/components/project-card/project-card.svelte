@@ -5,7 +5,9 @@
 
 <div class="project-card">
 	<div class="content">
-		<div class="name">{project.name}</div>
 		<img src={project.image} alt={project.name}>
+		<div class="name">
+			<h3>{project.name}</h3>
+		</div>
 	</div>
 </div>
