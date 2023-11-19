@@ -39,11 +39,15 @@
 			name: "Le Faubourg",
 			image: LeFaubourg,
 		},
+		{
+			name: "Starliva",
+			image: LeFaubourg,
+		},
 	]
 </script>
 
 <div id="projects">
-	<h1>Projects</h1>
+	<h1 class="title">Projects</h1>
 	<div class="cards">
 		{#each projects as project, i}
 			<ProjectCard project={project}/>

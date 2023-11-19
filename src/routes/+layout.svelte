@@ -29,13 +29,14 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		background-color: rgba(0,0,0,0.2);
 	}
 
 	main {
 		flex: 1;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 66rem;
 		margin: 0 auto;
 	}
 
