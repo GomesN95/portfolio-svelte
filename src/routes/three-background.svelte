@@ -93,7 +93,6 @@
       camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
       camera.lookAt( scene.position );
       const h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
-      material.color.setHSL( h, 0.5, 0.5 );
       renderer.render( scene, camera );
       }
   });
