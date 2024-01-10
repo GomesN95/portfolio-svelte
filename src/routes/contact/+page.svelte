@@ -8,7 +8,7 @@
 </script>
 
 <div id="contact">
-	<h1>Contact</h1>
+	<h1 class="title">Contact</h1>
 
 	<div class="content">
 		<form class="form" action="">

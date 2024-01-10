@@ -34,7 +34,7 @@
     const sprite = new THREE.TextureLoader().load(imageSprite);
 		sprite.colorSpace = THREE.SRGBColorSpace;
 
-    for ( let i = 0; i < 5000; i ++ ) {
+    for ( let i = 0; i < 2000; i ++ ) {
 
     const x = 2000 * Math.random() - 1000;
     const y = 2000 * Math.random() - 1000;
@@ -47,7 +47,7 @@
     geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
 
     let material = new THREE.PointsMaterial( { size: 35, sizeAttenuation: true, map: sprite, alphaTest: 0.5, transparent: true } );
-    material.color.setHSL( 1.0, 0.3, 0.7, THREE.SRGBColorSpace );
+    material.color.setHSL( 1, 1, 1, THREE.SRGBColorSpace );
 
     const particles = new THREE.Points( geometry, material );
     scene.add( particles );
@@ -93,7 +93,7 @@
       camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
       camera.lookAt( scene.position );
       const h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
-      material.color.setHSL( h, 0.5, 0.5 );
+      //material.color.setHSL( h, 0.5, 0.5 );
       renderer.render( scene, camera );
       }
   });

@@ -5,11 +5,16 @@
 
 <script>
 	import './page.scss';
+	
 	import ProjectCard from '../../components/project-card/project-card.svelte';
-	import MonsterPlayable from '../../lib/images/projects/monster_playable.png';
-	import LeFaubourg from '../../lib/images/projects/le-faubourg.png';
-	import VoodooBlog from '../../lib/images/projects/voodoo-blog.png';
-	import DesignMyBic from '../../lib/images/projects/design-my-bic.png';
+	import MonsterPlayable from '../../lib/images/projects/monster-playable/monster-playable.png';
+	import LeFaubourg from '../../lib/images/projects/le-faubourg/le-faubourg.png';
+	import StarLiva from '../../lib/images/projects/starliva/starliva.png';
+	import VoodooBlog from '../../lib/images/projects/voodoo/voodoo-blog.png';
+	import DesignMyBic from '../../lib/images/projects/design-my-bic/design-my-bic.png';
+	import Inovoiz from '../../lib/images/projects/inovoiz/inovoiz-dashboard.png';
+	import VotreGarageMoto from '../../lib/images/projects/votre-garage-moto/votre-garage-moto.png';
+	
 	export const projects = [
 		{
 			name: "Monster Playable",
@@ -21,7 +26,7 @@
 		},
 		{
 			name: "InovoiZ",
-			image: MonsterPlayable,
+			image: Inovoiz,
 		},
 		{
 			name: "Design My BIC",
@@ -33,7 +38,7 @@
 		},
 		{
 			name: "Votre garage moto",
-			image: MonsterPlayable,
+			image: VotreGarageMoto,
 		},
 		{
 			name: "Le Faubourg",
@@ -41,7 +46,7 @@
 		},
 		{
 			name: "Starliva",
-			image: LeFaubourg,
+			image: StarLiva,
 		},
 	]
 </script>
